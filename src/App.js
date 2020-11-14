@@ -6,7 +6,7 @@ import Axios from "axios";
 import Card from './components/Card'
 import { CircularProgress } from "@material-ui/core/";
  
-
+//This info is in Git now, right?
 class App extends Component {
   constructor(){
     super()
