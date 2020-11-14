@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route, Link, Redirect } from "react-router-dom";
 import './App.css';
+import NavBar from './components/NavBar';
+import Axios from "axios";
+import Card from './components/Card'
+import { CircularProgress } from "@material-ui/core/";
+ 
 
-function App() {
-  return (
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      year: "",
+      isLoading:true,
+      category: ""
+    }
+  }
+  componentDidMount(){
+    //console.log('mounted')
+    let url="https://nobelprizes.herokuapp.com/";
+
+    Axios.get(url)
+    .then((res) => {
+      return res
+    })
+    .then((data) => {
+      console.log(data)
+      this.setState({year: data.year})
+      this.setState({category: data.category, isLoading:false})
+      
+    })
+    
+  }
+  
+  render (){ 
+     console.log(this.state.year)
+     console.log(this.state.category)
+    if(this.state.isLoading === true){
+      return(<CircularProgress/>)
+    }else{
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <NavBar />
+    <Card />
+      
     </div>
-  );
+    ) 
 }
+  }
+}
+
 
 export default App;
