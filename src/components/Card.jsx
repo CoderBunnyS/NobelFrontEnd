@@ -33,7 +33,7 @@ export default function SimpleCard(props) {
   return (
     <div className="grid-container">
       <div className="grid">
-  console.log(props.year.data)
+  console.log(props)
   console.log(props.category.data)
       <Grid
         container 
@@ -44,7 +44,7 @@ export default function SimpleCard(props) {
         
       >
       {/* props.data.map((card) = () => {
-
+    
       }) */}
       {/* {props.length !== 0 
       {/* ? props.data.map((card) */}
@@ -60,7 +60,7 @@ export default function SimpleCard(props) {
         <p> Year:{card.year} </p> */}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          Name
+          {props.info.firstname}
         </Typography>
         <Typography variant="body2" component="p">
           Category

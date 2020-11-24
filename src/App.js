@@ -9,18 +9,19 @@ import YButton from "./components/YButton"
 import DButton from "./components/DButton"
 import FormPropsTextFields from "./components/Create"
 import CatButton from "./components/CatButton"
+import SCard from './components/SCard';
 
  
 //This info is in Git now, right?
 class App extends Component {
   constructor(props){
     super(props)
-    
     this.state = {
       year: "",
       isLoading:true,
       category: "",
-      name: ""
+      firstname: "",
+      surname: ""
     }
   }
   componentDidMount(){
@@ -33,11 +34,20 @@ class App extends Component {
       return res.data
     })
     .then((res) => {
-      console.log(res[0].year)
-       this.setState({year: res[0].year})
-      console.log(res[0].category)
-      this.setState({category: res[0].category, isLoading:false})
-      console.log(res[0].category)
+      console.log(res)
+      for (let i = 0; i <= res.length; i++) {
+        let info = res[i].laureates[0];
+        for (let j=0; j<= info.length; j++){
+        console.log(res[i].laureates)
+        //console.log(info.firstname)
+        const name = info.firstname;
+        
+      }
+    }
+      // this.setState({year: res.year})
+      // console.log(res[0].category)
+      // this.setState({category: res.category, isLoading:false})
+      // console.log(res[0].category)
       
     })
     
@@ -55,8 +65,8 @@ class App extends Component {
     <YButton />
     <CatButton />
     <FormPropsTextFields />
-    <Card />
-      
+    <Card {...this.state}/>
+    <SCard />  
     </div>
     ) 
 }
