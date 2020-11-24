@@ -3,10 +3,10 @@ import { Route, Link, Redirect } from "react-router-dom";
 import './App.css';
 import Axios from "axios";
 import Card from './components/Card'
-import { CircularProgress } from "@material-ui/core/";
+//import { CircularProgress } from "@material-ui/core/";
 import Header from "./components/Header"
 import YButton from "./components/YButton"
-import DButton from "./components/DButton"
+//import DButton from "./components/DButton"
 import Form from "./components/Create"
 import CatButton from "./components/CatButton"
 
@@ -36,15 +36,15 @@ class App extends Component {
     })
     
   }
+  
     
   
   
   render (){ 
-    console.log(this.state.results)
-    // console.log(this.state.category)
-    if(this.state.results.isLoading === true){
-      return(<CircularProgress/>)
-    }else{
+    // console.log(this.state.results)
+    //   if(this.state.results.isLoading === true){
+    //   return(<CircularProgress/>)
+    // }else{
     return(
     <div className="App">
     <Header />
@@ -57,7 +57,7 @@ class App extends Component {
     ) 
 }
   }
-}
+
 
 
 export default App;

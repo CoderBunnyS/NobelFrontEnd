@@ -1,8 +1,29 @@
 .MuiCard-root {
     margin: 25px;
     background-color: plum;
+    width: 25%;
 }
 #card {
     margin: 25px;
     background-color: pink;
+    width: 20%;
+}
+.grid {
+    display: inline;
+    width: 20%;
+}
+
+.motives {
+    border: 1px solid black;
+}
+.grid-container {
+    border: 1ps solid black;
+    background-color: purple;
+    width: 25%;
+    display: inline;
+}
+.root {
+    width: 20%;
+    display: inline-flex;
+
 }

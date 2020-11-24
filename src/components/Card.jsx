@@ -1,12 +1,9 @@
 import React from "react";
-//import Category from "./Category";
-//import PrizeYear from "./PrizeYear";
-
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from "@material-ui/core/Grid";
 import "./card.css"
@@ -25,6 +22,7 @@ const useStyles = makeStyles({
   },
 });
 
+
 export default function SimpleCard(props) {
   const classes = useStyles();
   
@@ -37,7 +35,7 @@ export default function SimpleCard(props) {
         container 
         display="grid"
         direction="row"
-        justify="space-between"
+        justify="space-around"
         alignItems="flex-start"
         
       >
@@ -47,8 +45,8 @@ export default function SimpleCard(props) {
       {/* {props.length !== 0 
       {/* ? props.data.map((card) */}
        {/* => ( */}
-        <div className="grid">
-        <Card className="root, {classes.root}" id="card">
+      <div className="row">  
+        <Card className="root, {classes.root}, col-lg-3" id="card">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Nobel Peace Prize Winner
@@ -58,9 +56,13 @@ export default function SimpleCard(props) {
         {props.category}
         <br />
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography  variant="h5" className={classes.pos} color="textSecondary">
           {props.laureates.map((item, index) => (<div>{item.firstname} {item.surname}<br />
-          <div>{item.motivation}</div>
+          </div>))}
+        </Typography>
+        <Typography  variant="h5" id="motivation">
+          {props.laureates.map((item, index) => (<div>
+          <div class="motives">Winner's Motivation: </div>{item.motivation}
           </div>))}
         </Typography>
         <Typography variant="body2" component="p">
@@ -74,11 +76,11 @@ export default function SimpleCard(props) {
       </CardContent>
       <CardActions>
         {/* <Button size="small">Delete Winner</Button> */}
-        <p>Delete Winner</p>
+        
         <DButton />
       </CardActions>
     </Card> 
-    </div>      
+    </div>
     </Grid>  
     </div>
     </div>
