@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from "@material-ui/core/Grid";
 import "./card.css"
 import DButton from "./DButton"
+import Edit from "./Edit"
 
 const useStyles = makeStyles({
   root: {

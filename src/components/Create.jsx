@@ -16,24 +16,43 @@ import axios from "axios"
 class Form extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '' , category: '', year: ''};
+    this.state = { firstname: '' , surname: '' , category: '', year: ''};
   }
   
-  // addWinnerName = (event) => {
-  //   event.preventDefault()
-  //   this.setState({name: event.target.value});
-  //   //console.log(this.state.name)
-  // }
-  // addWinnerCat = (event) => {
-  //   event.preventDefault()
-  //   this.setState({category: event.target.value});
-  //   //console.log(this.state.category)
-  // }
-  // addWinnerYear = (event) => {
-  //   event.preventDefault()
-  //   this.setState({year: event.target.value});
-  //   //console.log(this.state.year)
-  // }
+  submitInfo = (event) => {
+    event.preventDefault()
+    console.log(this.state.firstname, this.state.surname, this.state.category, this.state.year)
+    let laureates = [{"firstname": this.state.firstname, "surname": this.state.surname}]
+    console.log(laureates)
+    axios.post(`https://nobelprizes.herokuapp.com/create/`, { year: this.state.year, category: this.state.category, laureates: laureates })
+      .then(res => {
+        //console.log(res);
+        //console.log(res.data);
+        alert("Submitted")
+      })
+  
+  }
+  addWinnerFirstName = (event) => {
+    event.preventDefault()
+    this.setState({firstname: event.target.value});
+    //console.log(this.state.firstname)
+  }
+  addWinnerSurname = (event) => {
+    event.preventDefault()
+    this.setState({surname: event.target.value});
+    //console.log(this.state.surname)
+  }
+  addWinnerCat = (event) => {
+    event.preventDefault()
+    this.setState({category: event.target.value});
+    //console.log(this.state.category)
+  }
+  addWinnerYear = (event) => {
+    event.preventDefault()
+    this.setState({year: event.target.value});
+    //console.log(this.state.year)
+  }
+  
   // submitInfo = (event) => {
   //   event.preventDefault() 
   //   console.log(this.state.name, this.state.category, this.state.year)
@@ -56,10 +75,18 @@ class Form extends Component {
         <TextField
           required
           id="outlined-name"
-          label="Name"
+          label="First Name"
           placeholder="Enter your Winner's Name"
           variant="outlined"
-          onChange={this.addWinnerName}
+          onChange={this.addWinnerFirstName}
+        />
+        <TextField
+          required
+          id="outlined-name"
+          label="Last Name"
+          placeholder="Enter your Winner's Name"
+          variant="outlined"
+          onChange={this.addWinnerSurname}
         />
         <TextField
           
