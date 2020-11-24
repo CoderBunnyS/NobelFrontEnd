@@ -6,7 +6,7 @@
 #card {
     margin: 25px;
     background-color: pink;
-    width: 20%;
+    padding: 15px;
 }
 .grid {
     display: inline;
@@ -14,7 +14,8 @@
 }
 
 .motives {
-    border: 1px solid black;
+    border-bottom: 4px dotted black;
+    padding: 15px;
 }
 .grid-container {
     border: 1ps solid black;
@@ -26,4 +27,11 @@
     width: 20%;
     display: inline-flex;
 
+}
+#motivation {
+    padding: 15px;
+    margin: 5px;
+}
+.category {
+    padding: 5px;
 }

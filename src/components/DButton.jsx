@@ -5,30 +5,20 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import axios from "axios"
 
-// const useStyles = makeStyles((theme) => ({
-//   margin: {
-//     margin: theme.spacing(1),
-//   },
-//   extendedIcon: {
-//     marginRight: theme.spacing(1),
-//   },
-// }));
-
 export default function DButton(props) {
-  //const classes = useStyles();
-  //let index = props.key
-  console.log(props)
-  axios.delete(`https://nobelprizes.herokuapp.com/year/{index}`)
-  //.then((res) => {
-  //console.log(res);
-  console.log('clicked')
-  //  props.rerenderParentCallback()
-  
-  //)
+
+ let deleteButton = e => {
+  e.preventDefault()
+  console.log("CLICKED!!!!!!!!")
+  console.log(props.id)
+  axios.delete(`https://nobelprizes.herokuapp.com/id/${props.id}`).then(res=>{console.log(res)
+  alert("Deleted")})
+}
   return (
     <div>
       <div>
-        <IconButton aria-label="delete" className='deleteIcon' onClick={DButton}>
+        <button onClick={deleteButton}>button text</button>
+        <IconButton aria-label="delete" className='deleteIcon'>
           <DeleteIcon />
         </IconButton>
       </div>

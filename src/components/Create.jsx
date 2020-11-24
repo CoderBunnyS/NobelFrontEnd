@@ -18,12 +18,7 @@ class Form extends Component {
     super(props);
     this.state = { name: '' , category: '', year: ''};
   }
-  deleteButton = (id) => {
-    console.log("clicked")
-    console.log(id)
-    // alert(`Are you sure you want to delete ${name}`)
-
-  }
+  
   // addWinnerName = (event) => {
   //   event.preventDefault()
   //   this.setState({name: event.target.value});

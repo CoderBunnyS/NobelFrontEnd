@@ -51,7 +51,7 @@ export default function SimpleCard(props) {
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Nobel Peace Prize Winner
         </Typography>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" className="category">
         {props.year}<br />
         {props.category}
         <br />
@@ -77,7 +77,7 @@ export default function SimpleCard(props) {
       <CardActions>
         {/* <Button size="small">Delete Winner</Button> */}
         
-        <DButton />
+        <DButton id={props._id}/>
       </CardActions>
     </Card> 
     </div>
