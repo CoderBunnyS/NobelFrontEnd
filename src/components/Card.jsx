@@ -28,13 +28,11 @@ const useStyles = makeStyles({
 export default function SimpleCard(props) {
   const classes = useStyles();
   
-  console.log(props)
+  //console.log(props)
 
   return (
     <div className="grid-container">
       <div className="grid">
-  console.log(props)
-  console.log(props.category.data)
       <Grid
         container 
         display="grid"
@@ -56,19 +54,20 @@ export default function SimpleCard(props) {
           Nobel Peace Prize Winner
         </Typography>
         <Typography variant="h5" component="h2">
-        {/* <p> Category: {card.category} </p> 
-        <p> Year:{card.year} </p> */}
+        {props.year}<br />
+        {props.category}
+        <br />
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          {props.info.firstname}
+          {props.laureates.map((item, index) => (<div>{item.firstname} {item.surname}<br />
+          <div>{item.motivation}</div>
+          </div>))}
         </Typography>
         <Typography variant="body2" component="p">
-          Category
-          <br />
+          
           
         </Typography>
         <Typography variant="body2" component="p">
-          Year
           <br />
           
         </Typography>
@@ -79,11 +78,7 @@ export default function SimpleCard(props) {
         <DButton />
       </CardActions>
     </Card> 
-    </div>
-    
-      ))
-      {/* : null} */}
-      
+    </div>      
     </Grid>  
     </div>
     </div>

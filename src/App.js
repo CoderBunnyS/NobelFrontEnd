@@ -7,7 +7,7 @@ import { CircularProgress } from "@material-ui/core/";
 import Header from "./components/Header"
 import YButton from "./components/YButton"
 import DButton from "./components/DButton"
-import FormPropsTextFields from "./components/Create"
+import Form from "./components/Create"
 import CatButton from "./components/CatButton"
 
  
@@ -20,7 +20,8 @@ class App extends Component {
       isLoading:true,
       category: "",
       firstname: "",
-      surname: ""
+      surname: "",
+      results:[]
     }
   }
   componentDidMount(){
@@ -29,34 +30,19 @@ class App extends Component {
 
     Axios.get(url)
     .then((res) => {
-      console.log(res.data)
-      return res.data
-    })
-    .then((res) => {
-      console.log(res)
-      for (let i = 0; i <= res.length; i++) {
-        console.log(res[i]);
-        
-        //console.log(info.firstname)
-        //let name = info.firstname;
-
-      }
+      this.setState({results: res.data})
       
-      // for (let j=0; j<= info.laureates.length; j++)
-      //   console.log(info.laureates[j])
-      // this.setState({year: res.year})
-      // console.log(res[0].category)
-      // this.setState({category: res.category, isLoading:false})
-      // console.log(res[0].category)
-      
+      //return res.data
     })
     
   }
+    
+  
   
   render (){ 
-     
-     console.log(this.state.category)
-    if(this.state.isLoading === true){
+    console.log(this.state.results)
+    // console.log(this.state.category)
+    if(this.state.results.isLoading === true){
       return(<CircularProgress/>)
     }else{
     return(
@@ -64,9 +50,9 @@ class App extends Component {
     <Header />
     <YButton />
     <CatButton />
-    <FormPropsTextFields />
-    <Card {...this.state}/>
-      
+    <Form />
+    
+    {this.state.results.map((item, index) => (<div key={index}>  <Card {...item}/></div>))}  
     </div>
     ) 
 }
