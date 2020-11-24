@@ -79,6 +79,7 @@ export default function SimpleCard(props) {
         {/* <Button size="small">Delete Winner</Button> */}
         
         <DButton id={props._id}/>
+        <Edit id={props._id}/>
       </CardActions>
     </Card> 
     </div>

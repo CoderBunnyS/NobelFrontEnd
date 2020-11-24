@@ -10,6 +10,7 @@ import YButton from "./components/YButton"
 import Form from "./components/Create"
 import CatButton from "./components/CatButton"
 
+
  
 //This info is in Git now, right?
 class App extends Component {
@@ -48,8 +49,8 @@ class App extends Component {
     return(
     <div className="App">
     <Header />
-    <YButton />
-    <CatButton />
+    {/* <YButton />
+    <CatButton /> */}
     <Form />
     
     {this.state.results.map((item, index) => (<div key={index}>  <Card {...item}/></div>))}  

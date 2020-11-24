@@ -53,19 +53,6 @@ class Form extends Component {
     //console.log(this.state.year)
   }
   
-  // submitInfo = (event) => {
-  //   event.preventDefault() 
-  //   console.log(this.state.name, this.state.category, this.state.year)
-  //   var joined = this.state.laureates.concat('new value');
-  //   //submittedInfo = {};
-  //   this.setState({ laureates: joined })
-  //   axios.post(`https://nobelprizes.herokuapp.com/create`, { year: this.state.year, category:this.state.category, name:this.state.laureates[0] })
-  //     .then(res => {
-  //       console.log(res);
-  //       console.log(res.data);
-  //     })
-  // }
-  
 
   render(){
   return (
