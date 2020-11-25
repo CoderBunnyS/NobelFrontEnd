@@ -69,6 +69,7 @@ body {
   justify-content: space-around;
   background-color: rgb(241, 236, 241);
   
+  
 }
 #year {
   display: inline-flex;
@@ -87,5 +88,9 @@ body {
 #header {
   color: #fff;
   background-color: pink;
+}
+.row {
+  width: 100vw;
+  margin-left: 20px;
 }
 

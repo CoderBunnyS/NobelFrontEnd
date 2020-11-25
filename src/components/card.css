@@ -7,31 +7,39 @@
     margin: 25px;
     background-color: pink;
     padding: 15px;
+    width: 90%;
 }
 .grid {
     display: inline;
-    width: 20%;
+    width: fit-content;
 }
 
 .motives {
     border-bottom: 4px dotted black;
+    margin-top: 25px;
     padding: 15px;
+    margin-bottom: 15px;
 }
 .grid-container {
-    border: 1ps solid black;
+    
     background-color: purple;
-    width: 25%;
+    margin: 0px;
     display: inline;
 }
 .root {
-    width: 20%;
-    display: inline-flex;
+    width: fit-content;
+    display: inline;
 
 }
 #motivation {
     padding: 15px;
     margin: 5px;
+    padding-top: 15px;
 }
-.category {
-    padding: 5px;
+.winner {
+    
+}
+.names {
+    display: inline;
+    padding-top: 20px;
 }
