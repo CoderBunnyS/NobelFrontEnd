@@ -9,10 +9,12 @@ export default function DButton(props) {
 
  let deleteButton = e => {
   e.preventDefault()
-  console.log("CLICKED!!!!!!!!")
-  console.log(props.id)
+  //console.log("CLICKED!!!!!!!!")
+  //console.log(props.id)
   axios.delete(`https://nobelprizes.herokuapp.com/id/${props.id}`).then(res=>{console.log(res)
-  alert("Deleted")})
+  alert("Deleted")});
+  window.location.reload()
+  
 }
   return (
     <div>

@@ -19,13 +19,15 @@ import TextField from '@material-ui/core/TextField';
           .then(res => {
             //console.log(res);
             //console.log(res.data);
-            alert("Changed")
+            //alert("Changed")
+            window.location.reload()
           })
       
       }
       editWinnerFirstName = (event) => {
         event.preventDefault()
         this.setState({firstname: event.target.value});
+        
         //console.log(this.state.firstname)
       }
       editWinnerSurname = (event) => {
@@ -43,23 +45,16 @@ import TextField from '@material-ui/core/TextField';
         this.setState({year: event.target.value});
         //console.log(this.state.year)
       }
-    //  //EditButton = e => {
-    //   e.preventDefault()
-    //   console.log("CLICKED!!!!!!!!")
-    //   console.log(this.props.id)
-    //   axios.put(`https://nobelprizes.herokuapp.com/id/${this.props.id}`).then(res=>{console.log(res)
-    //   alert("Edited")})
-    // }
+
     render() {
       return (
         <div className="editForm">
       <div>
-        {/* <button onClick={Edit}>Edit button text</button> */}
         <form className="editForm" noValidate autoComplete="off" >
         <div>
         <h3>Edit the winner!</h3>
         <TextField
-          
+          required
           id="outlined-name"
           label="First Name"
           placeholder="Enter your Winner's Name"
@@ -75,6 +70,7 @@ import TextField from '@material-ui/core/TextField';
           onChange={this.editWinnerSurname}
         />
         <TextField
+          required
           id="outlined-cat"
           label="Category"
           placeholder="What category did they win?"
@@ -82,6 +78,7 @@ import TextField from '@material-ui/core/TextField';
           onChange={this.editWinnerCat}
         />
         <TextField
+          required
           id="outlined-number"
           label="Year"
           placeholder="What year did they win?"
