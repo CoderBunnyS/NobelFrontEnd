@@ -91,7 +91,7 @@ class Form extends Component {
           variant="outlined"
           onChange={this.addWinnerYear}
         />
-        <button onClick={this.submitInfo}>Submit</button>
+        <button className = "submitButton" onClick={this.submitInfo}>Submit</button>
       </div>
     </form>
   );

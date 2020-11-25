@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
           <Typography variant="h1" className={classes.title}>
             Nobel Peace Prizes
           </Typography>
-          <Button color="inherit">Home</Button>
+          <Button color="inherit" onclick="window.location.href = 'https://nobelprizes.herokuapp.com/';">Home</Button>
         </Toolbar>
       </AppBar>
     </div>

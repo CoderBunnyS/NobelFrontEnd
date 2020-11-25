@@ -93,4 +93,9 @@ body {
   width: 100vw;
   margin-left: 20px;
 }
-
+.submitButton {
+  border-radius: 12px;
+  background-color: pink;
+  padding: 15px;
+  margin-left: 35px;
+}
