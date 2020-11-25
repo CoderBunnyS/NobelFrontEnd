@@ -36,10 +36,16 @@
     margin: 5px;
     padding-top: 15px;
 }
-.winner {
-    
+.deleteIcon {
+    padding: 25px;
 }
 .names {
     display: inline;
     padding-top: 20px;
+}
+.form {
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    padding-bottom: 25px;
 }

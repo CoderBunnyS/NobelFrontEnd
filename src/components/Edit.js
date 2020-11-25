@@ -52,14 +52,14 @@ import TextField from '@material-ui/core/TextField';
     // }
     render() {
       return (
-        <div>
+        <div className="editForm">
       <div>
         {/* <button onClick={Edit}>Edit button text</button> */}
-        <form className="form" noValidate autoComplete="off" >
+        <form className="editForm" noValidate autoComplete="off" >
         <div>
         <h3>Edit the winner!</h3>
         <TextField
-          required
+          
           id="outlined-name"
           label="First Name"
           placeholder="Enter your Winner's Name"
@@ -88,7 +88,7 @@ import TextField from '@material-ui/core/TextField';
           variant="outlined"
           onChange={this.editWinnerYear}
         />
-        <button onClick={this.submitEdit}>Edit</button>
+        <button id="editButton" onClick={this.submitEdit}>Edit</button>
       </div>
     </form>
       </div>

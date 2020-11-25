@@ -17,9 +17,9 @@ export default function DButton(props) {
   return (
     <div>
       <div>
-        <button onClick={deleteButton}>button text</button>
-        <IconButton aria-label="delete" className='deleteIcon'>
-          <DeleteIcon />
+        {/* <button onClick={deleteButton}>button text</button> */}
+        <IconButton aria-label="delete" id='deleteIcon'>
+          <DeleteIcon onClick={deleteButton} />
         </IconButton>
       </div>
     </div>
