@@ -49,15 +49,15 @@ export default function SimpleCard(props) {
       <div className="row">  
         <Card className="root, {classes.root}, col-lg-3" id="card">
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Nobel Peace Prize Winner
+        <Typography className={classes.title} color="textSecondary" gutterBottom variant="h2">
+          <h2>Nobel Peace Prize Winners in {props.year} for the category of {props.category}</h2>
         </Typography>
-        <Typography variant="h5" component="h2" className="category">
-        {props.year}<br />
-        {props.category}
+        {/* <Typography variant="h5" component="h2" className="category">
         <br />
-        </Typography>
-        <Typography  variant="h5" className={classes.pos} color="textSecondary">
+        
+        <br />
+        </Typography> */}
+        <Typography  variant="h2" className={classes.pos} color="textSecondary">
           {props.laureates.map((item, index) => (<div>{item.firstname} {item.surname}<br />
           </div>))}
         </Typography>

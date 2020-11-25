@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
     <div className={classes.root} >
       <AppBar position="static" id="header">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h1" className={classes.title}>
             Nobel Peace Prizes
           </Typography>
           <Button color="inherit">Home</Button>
