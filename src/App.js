@@ -42,14 +42,9 @@ class App extends Component {
   
   
   render (){ 
-    // console.log(this.state.results)
-    //   if(this.state.results.isLoading === true){
-    //   return(<CircularProgress/>)
-    // }else{
     return(
     <div className="App">
     <Header />
-    <p>Does this work?</p>
     <Form />
     
     {this.state.results.map((item, index) => (<div key={index}>  <Card {...item}/></div>))}  
