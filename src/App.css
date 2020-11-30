@@ -37,12 +37,12 @@
     transform: rotate(360deg);
   }
 }
-@use "@material/floating-label/mdc-floating-label";
+/* @use "@material/floating-label/mdc-floating-label";
 @use "@material/line-ripple/mdc-line-ripple";
 @use "@material/notched-outline/mdc-notched-outline";
-@use "@material/textfield";
+@use "@material/textfield"; */
 
-@include textfield.core-styles;
+/* @include textfield.core-styles; */
 
 .MuiButton-contained {
   display: inline;
