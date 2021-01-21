@@ -24,7 +24,7 @@
   font-size: calc(10px + 2vmin);
   color: #E9C762;
 }
-img-responsive {
+.img-responsive {
   width: 30%;
   height: 30%;
 }
@@ -91,7 +91,7 @@ body {
 #header {
   color: #E9C762;
   background-color: #3E1619;
-  padding: 80px;
+  padding: 100px;
 }
 .row {
   width: 100vw;
