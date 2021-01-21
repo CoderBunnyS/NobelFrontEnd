@@ -82,11 +82,11 @@ body {
   background-color: #3E1619;
 }
 .MuiAppBar-colorPrimary {
-  color: #fff;
+  color: #E7E5E2;
   background-color: #3E1619;
 }
 #header {
-  color: #fff;
+  color: #E7E5E2;
   background-color: #3E1619;
 }
 .row {
@@ -109,7 +109,7 @@ body {
 }
 #editButton {
   border-radius: 12px;
-  background-color: white;
+  background-color: #E7E5E2;
   padding: 15px;
   margin-left: 35px;
 }
