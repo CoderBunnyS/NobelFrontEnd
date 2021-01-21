@@ -45,6 +45,7 @@ class App extends Component {
     return(
     <div className="App">
     <Header />
+    <img className="img-responsive" src="https://www.plu.edu/news/wp-content/uploads/sites/573/2020/02/nobel-prize.jpg" alt="logo"/>
     <Form />
     
     {this.state.results.map((item, index) => (<div key={index}>  <Card {...item}/></div>))}  

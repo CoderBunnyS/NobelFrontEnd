@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
           <Typography variant="h1" className={classes.title}>
             The history of Nobel Peace Prize winners through the years
           </Typography>
-          <img className="img-responsive" src="https://www.plu.edu/news/wp-content/uploads/sites/573/2020/02/nobel-prize.jpg" alt="logo"/>
+          
           <Button color="inherit" onclick="window.location.href = 'https://nobelprizes.herokuapp.com/';">Home</Button>
         </Toolbar>
       </AppBar>
