@@ -25,6 +25,7 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root} >
       <AppBar position="static" id="header">
+      <img className="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nobel_Prize.png/220px-Nobel_Prize.png" alt="logo"/>
         <Toolbar>
           <Typography variant="h1" className={classes.title}>
             Nobel Peace Prizes
