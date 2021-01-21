@@ -40,7 +40,7 @@ class App extends Component {
         <Header />
         <img
           className="img-responsive"
-          src="https://www.plu.edu/news/wp-content/uploads/sites/573/2020/02/nobel-prize.jpg"
+          src="https://scx2.b-cdn.net/gfx/news/hires/2015/561381b103db1.jpeg"
           alt="logo"
         />
         <div class="aboutPara">
