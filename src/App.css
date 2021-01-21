@@ -67,27 +67,27 @@ body {
   display: inline;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(241, 236, 241);
+  background-color: #E7E5E2;
   
   
 }
 #year {
   display: inline-flex;
   flex-direction: row;
-  background-color: pink;
+  background-color: #3E1619;
 }
 #cat {
   display: inline-flex;
   flex-direction: row;
-  background-color: pink;
+  background-color: #3E1619;
 }
 .MuiAppBar-colorPrimary {
   color: #fff;
-  background-color: pink;
+  background-color: #3E1619;
 }
 #header {
   color: #fff;
-  background-color: pink;
+  background-color: #3E1619;
 }
 .row {
   width: 100vw;
@@ -95,7 +95,7 @@ body {
 }
 .submitButton {
   border-radius: 12px;
-  background-color: pink;
+  background-color: #3E1619;
   padding: 15px;
   margin-left: 35px;
 }
