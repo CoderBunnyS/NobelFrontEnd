@@ -2,9 +2,7 @@
 .App {
   text-align: center;
 }
-* {
-  background-color: #61dafb;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -69,7 +67,7 @@ body {
   display: inline;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(241, 236, 241);
+  background-color: blue;
   
   
 }
