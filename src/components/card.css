@@ -1,11 +1,11 @@
 .MuiCard-root {
     margin: 25px;
-    background-color: plum;
+    background-color: #3E1619;
     width: 25%;
 }
 #card {
     margin: 25px;
-    background-color: pink;
+    background-color: #3E1619;
     padding: 15px;
     width: 90%;
 }
@@ -22,7 +22,7 @@
 }
 .grid-container {
     
-    background-color: purple;
+    background-color: #3E1619;
     margin: 0px;
     display: inline;
 }
@@ -46,6 +46,6 @@
 .form {
     border: 1px solid gray;
     background-color: gray;
-    color: white;
+    color: #E7E5E2;
     padding-bottom: 25px;
 }
