@@ -67,7 +67,7 @@ body {
   display: inline;
   flex-direction: row;
   justify-content: space-around;
-  background-color: blue;
+  background-color: rgb(241, 236, 241);
   
   
 }
