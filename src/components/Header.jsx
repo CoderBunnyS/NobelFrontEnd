@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
             The history of Nobel Peace Prize winners through the years
           </Typography>
           
-          <Button color="inherit" onclick="window.location.href = 'https://nobelprizes.herokuapp.com/';">Home</Button>
+          {/* <Button color="inherit" onclick="window.location.href = 'https://nobelprizes.herokuapp.com/';">Home</Button> */}
         </Toolbar>
       </AppBar>
     </div>
