@@ -28,7 +28,7 @@ export default function ButtonAppBar() {
       
         <Toolbar>
           <Typography variant="h1" className={classes.title}>
-            The history of Nobel Peace Prize winners through the years
+            The history of the <br></br>Nobel Peace Prize
           </Typography>
           
           {/* <Button color="inherit" onclick="window.location.href = 'https://nobelprizes.herokuapp.com/';">Home</Button> */}
