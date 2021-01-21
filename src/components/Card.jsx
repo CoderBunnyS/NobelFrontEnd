@@ -58,7 +58,7 @@ export default function SimpleCard(props) {
         <br />
         </Typography> */}
         <Typography  variant="h2" className={classes.pos} color="textSecondary">
-          {props.laureates.map((item, index) => (<div>{item.firstname} {item.surname}<br />
+          {props.laureates.map((item, index) => (<div className = "names">{item.firstname} {item.surname}<br />
           </div>))}
         </Typography>
         <Typography  variant="h5" id="motivation">

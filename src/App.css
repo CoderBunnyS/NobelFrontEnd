@@ -24,10 +24,7 @@
   font-size: calc(10px + 2vmin);
   color: #E9C762;
 }
-.img-responsive {
-  width: 30%;
-  height: 30%;
-}
+
 .App-link {
   color: #61dafb;
 }
@@ -102,6 +99,7 @@ body {
   background-color: #3E1619;
   padding: 15px;
   margin-left: 35px;
+  color: #E9C762;
 }
 #deleteIcon {
   position: absolute;

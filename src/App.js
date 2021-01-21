@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-//import { Route, Link, Redirect } from "react-router-dom";
+import "./App.css";
 import "./App.css";
 import Axios from "axios";
 import Card from "./components/Card";
 //import { CircularProgress } from "@material-ui/core/";
 import Header from "./components/Header";
 import Para from "./components/para";
-//import YButton from "./components/YButton"
-//import DButton from "./components/DButton"
 import Form from "./components/Create";
-//import CatButton from "./components/CatButton"
 
-//This info is in Git now, right?
 class App extends Component {
   constructor(props) {
     super(props);
@@ -40,9 +36,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Para />
-
         <Form />
-
         {this.state.results.map((item, index) => (
           <div key={index}>
             {" "}

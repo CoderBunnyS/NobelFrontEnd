@@ -8,7 +8,7 @@
     background-color: #3E1619;
     padding: 15px;
     width: 90%;
-    color: #E7E5E2;
+    color: #E9C762;
 }
 .grid {
     display: inline;
@@ -43,10 +43,13 @@
 .names {
     display: inline;
     padding-top: 20px;
+    padding: 500px;
+    color: #E9C762;
 }
 .form {
     border: 1px solid gray;
     background-color: gray;
-    color: #E7E5E2;
+    color: #E9C762;
     padding-bottom: 25px;
+    padding: 100px;
 }

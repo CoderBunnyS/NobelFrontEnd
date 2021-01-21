@@ -1,0 +1,16 @@
+.parentContainer {
+   display: inline-flex;
+   
+}
+.columnOne {
+    width: 60%;
+}
+.columnTwo {
+    width: 40%;
+    font-size: 1.5rem;
+    padding: 150px 100px 0px 100px;
+}
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}

@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
+import "./para.css"
 
 export default class Para extends Component {
     render() {
         return (
-            <div>
-                <img
+            <div className="parentContainer">
+            <div className = "columnOne">
+            <img
           className="img-responsive"
           src="https://scx2.b-cdn.net/gfx/news/hires/2015/561381b103db1.jpeg"
           alt="logo"
         />
-        <div class="aboutPara">
+        </div>
+        <div className="columnTwo">
+        <h2>History</h2>
           <p>
             When the Swedish businessman Alfred Nobel passed away in 1896, he
             left behind what was then one of the world&rsquo;s largest private
@@ -22,7 +26,7 @@ export default class Para extends Component {
               conferred the greatest benefit on mankind"
             </em>
           </p>
-          <h3>Will</h3>
+          <h2>Will</h2>
           <p>
             The will specified in which fields the prizes should be awarded
             &ndash; physics, chemistry, medicine or physiology, literature and

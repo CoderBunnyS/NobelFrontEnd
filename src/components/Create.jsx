@@ -58,7 +58,7 @@ class Form extends Component {
   return (
     <form className="form" noValidate autoComplete="off" >
         <div>
-        <h3>Add your own winner to the list!</h3>
+        <h2>You can add your friends or yourself to our list of winners!</h2>
         <TextField
           required
           id="outlined-name"
