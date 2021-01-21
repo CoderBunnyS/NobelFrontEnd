@@ -25,7 +25,7 @@
   color: white;
 }
 img-responsive {
-  width: fit-content;
+  width: 80%;
   height: fit-content;
 }
 .App-link {
