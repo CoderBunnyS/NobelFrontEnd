@@ -51,8 +51,8 @@ import TextField from '@material-ui/core/TextField';
         <div className="editForm">
       <div>
         <form className="editForm" noValidate autoComplete="off" >
-        <div>
-        <h3>Edit the winner!</h3>
+        <div id="editForm">
+        <h3>Edit the Winners!</h3>
         <TextField
           required
           id="outlined-name"

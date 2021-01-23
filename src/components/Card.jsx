@@ -38,7 +38,7 @@ export default function SimpleCard(props) {
         </Typography>
         <Typography  variant="h2" className={classes.pos} color="textSecondary">
     
-          {props.laureates.map((item, index) => (<div className = "names">{props.year} <br></br>{item.firstname} {item.surname} won in the category of {props.category} <br></br> Their motivation was <br></br> {item.motivation}<br></br> <hr></hr>       
+          {props.laureates.map((item, index) => (<div className = "names">{props.year} <br></br>{item.firstname} {item.surname} - {props.category} <br></br> Motivation <br></br> {item.motivation}<br></br> <hr></hr>       
           {/* {props.laureates.map((item, index) => (<div>
           <div class="motives">Winner's Motivation: </div>
           </div>))} */}

@@ -25,7 +25,7 @@
   color: #E9C762;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
-  letter-spacing: 5px;
+  
 }
 
 .App-link {
@@ -59,6 +59,8 @@
 .MuiButtonBase-root {
   display: inline;
   background-color: red;
+  height: 2em;
+  width: 2em;
 }
 .MuiButton-root {
   background-color: red;
@@ -91,7 +93,8 @@ body {
 #header {
   color: #E9C762;
   background-color: #3E1619;
-  padding: 100px;
+  padding: 70px;
+  letter-spacing: 5px;
   font-family: 'Times New Roman', Times, serif;
 }
 .row {
@@ -109,14 +112,22 @@ body {
   position: absolute;
   padding-bottom: 25px;
   margin-right: 20px;
+  height: 2em;
+  width: 2em;
 }
 .editForm {
   margin-left: 300px;
+  color: #E9C762;
 }
 #editButton {
   border-radius: 12px;
   background-color: #E7E5E2;
   padding: 15px;
   margin-left: 35px;
+}
+#editForm {
+  color: #E9C762;
+  padding: 25px;
+  float: left;
 }
 /* //change */
