@@ -1,19 +1,20 @@
-.MuiCard-root {
+/* .MuiCard-root {
     margin: 25px;
     background-color: #3E1619;
     width: 25%;
-}
+} */
 #card {
     margin: 25px;
     background-color: #3E1619;
     padding: 15px;
-    width: 90%;
+    /* width: 90%; */
     color: #E9C762;
+    /* column-count: 4; */
 }
-.grid {
+/* .grid {
     display: inline;
     width: fit-content;
-}
+} */
 
 .motives {
     border-bottom: 4px dotted black;
@@ -21,29 +22,33 @@
     padding: 15px;
     margin-bottom: 15px;
 }
-.grid-container {
-    
+.grid-container {   
     background-color: #3E1619;
     margin: 0px;
     display: inline;
+    column-count: 4;
+
 }
-.root {
+/* .root {
     width: fit-content;
     display: inline;
 
-}
-#motivation {
+} */
+/* .row {
+    column-count: 4;
+} */
+/* #motivation {
     padding: 15px;
     margin: 5px;
     padding-top: 15px;
-}
+} */
 .deleteIcon {
     padding: 25px;
 }
 .names {
     display: inline;
-    padding-top: 20px;
-    padding: 500px;
+    /* padding-top: 20px;
+    padding: 50px; */
     color: #E9C762;
 }
 .form {
@@ -53,3 +58,5 @@
     padding-bottom: 25px;
     padding: 100px;
 }
+
+
