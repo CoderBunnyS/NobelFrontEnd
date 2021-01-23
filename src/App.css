@@ -109,16 +109,14 @@ body {
   color: #E9C762;
 }
 #deleteIcon {
-  position: absolute;
-  padding-bottom: 25px;
-  margin-right: 20px;
-  height: 2em;
-  width: 2em;
+  padding: 50px;
+  height: 200%;
+  width: 200%;
+  margin-left: 50px;
+  
+  
 }
-.editForm {
-  margin-left: 300px;
-  color: #E9C762;
-}
+
 #editButton {
   border-radius: 12px;
   background-color: #E7E5E2;
@@ -127,7 +125,9 @@ body {
 }
 #editForm {
   color: #E9C762;
-  padding: 25px;
-  float: left;
+  padding: 50px;
+  margin-right: 0;
+  position: relative;
+  left: 500px;
 }
 /* //change */
