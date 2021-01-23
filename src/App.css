@@ -21,8 +21,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(50px + 2vmin); */
   color: #E9C762;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  letter-spacing: 5px;
 }
 
 .App-link {
@@ -89,6 +92,7 @@ body {
   color: #E9C762;
   background-color: #3E1619;
   padding: 100px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .row {
   width: 100vw;

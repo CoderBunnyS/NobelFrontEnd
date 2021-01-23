@@ -27,7 +27,7 @@ export default function ButtonAppBar() {
       <AppBar position="static" id="header">
       
         <Toolbar>
-          <Typography variant="h1" className={classes.title}>
+          <Typography variant="h1" className={classes.title} id="header">
             The history of the <br></br>Nobel Peace Prize
           </Typography>
           

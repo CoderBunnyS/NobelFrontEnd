@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 //import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Grid from "@material-ui/core/Grid";
+//import Grid from "@material-ui/core/Grid";
 import "./card.css"
 import DButton from "./DButton"
 import Edit from "./Edit"
@@ -29,62 +29,29 @@ export default function SimpleCard(props) {
   
   //console.log(props)
 
-  return (
-    <div className="grid-container">
-      <div className="grid">
-      <Grid
-        container 
-        display="grid"
-        direction="row"
-        justify="space-around"
-        alignItems="flex-start"
-        
-      >
-      {/* props.data.map((card) = () => {
-    
-      }) */}
-      {/* {props.length !== 0 
-      {/* ? props.data.map((card) */}
-       {/* => ( */}
-      <div className="row">  
-        <Card className="root, {classes.root}, col-lg-3" id="card">
+  return ( 
+    <div className="grid-container"> 
+      <Card className="root, {classes.root}, col-lg-3" id="card">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom variant="h2">
-          <h2>Nobel Peace Prize Winners in {props.year} for the category of {props.category}</h2>
+          {/* <h2>Nobel Peace Prize Winners in {props.year} for the category of {props.category}</h2> */}
         </Typography>
-        {/* <Typography variant="h5" component="h2" className="category">
-        <br />
-        
-        <br />
-        </Typography> */}
         <Typography  variant="h2" className={classes.pos} color="textSecondary">
-          {props.laureates.map((item, index) => (<div className = "names">{item.firstname} {item.surname}<br />
+    
+          {props.laureates.map((item, index) => (<div className = "names">{props.year} <br></br>{item.firstname} {item.surname} won in the category of {props.category} <br></br> Their motivation was <br></br> {item.motivation}<br></br> <hr></hr>       
+          {/* {props.laureates.map((item, index) => (<div>
+          <div class="motives">Winner's Motivation: </div>
+          </div>))} */}
+
+          {/* <br /> */}
           </div>))}
-        </Typography>
-        <Typography  variant="h5" id="motivation">
-          {props.laureates.map((item, index) => (<div>
-          <div class="motives">Winner's Motivation: </div>{item.motivation}
-          </div>))}
-        </Typography>
-        <Typography variant="body2" component="p">
-          
-          
-        </Typography>
-        <Typography variant="body2" component="p">
-          <br />
-          
         </Typography>
       </CardContent>
-      <CardActions>
-        {/* <Button size="small">Delete Winner</Button> */}
-        
+      <CardActions>  
         <DButton id={props._id}/>
         <Edit id={props._id}/>
       </CardActions>
     </Card> 
-    </div>
-    </Grid>  
-    </div>
     </div>
     
   );
