@@ -26,7 +26,7 @@ export default class Para extends Component {
               conferred the greatest benefit on mankind"
             </em>
           </p>
-          <h2>Will</h2>
+          <h2>The Will</h2>
           <p>
             The will specified in which fields the prizes should be awarded
             &ndash; physics, chemistry, medicine or physiology, literature and
